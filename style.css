@@ -63,6 +63,16 @@ body{
     box-shadow:0px 0px 5px rgb(255, 0, 234);
 }
 
+td:nth-child(5){
+    visibility: collapse;
+}
+
+tr:hover td:nth-child(5){
+    visibility: visible;
+    animation: fadeIn 0.5s;
+}
+
+
 @keyframes fadeIn {
     from{
         opacity: 0
