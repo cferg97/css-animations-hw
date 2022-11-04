@@ -112,7 +112,7 @@
         <div class="row justify-content-center text-center">
             <div class="card col-11" style="width: 100%;">
                 <img class="card-img-top img-fluid rounded mt-2" src="./images/bg.jpg">
-                <div class="card-body">
+                <div  class="card-body">
                     <h3 class="card-title">Scandroid (2016)</h3>
                     <h6 class="card-title">By Scandroid</h6>
                     <h6 class="card-text">Genre:<br>Synthwave</h6>
@@ -122,6 +122,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Track Name</th>
+                                <th scope="col">Artist</th>
                                 <th scope="col">Length</th>
                                 <th scope="col"></th>
                                 </td>
@@ -130,90 +131,105 @@
                             <tr>
                                 <th scope="row">1</th>
                                 <td>2517</td>
+                                <td>Scandroid</td>
                                 <td>4:39</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">2</th>
                                 <td>Salvation Code</td>
+                                <td>Scandroid</td>
                                 <td>5:50</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">3</th>
                                 <td>Aphelion</td>
+                                <td>Scandroid</td>
                                 <td>5:35</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">4</th>
                                 <td>Shout (Tears for Fears cover)</td>
+                                <td>Scandroid</td>
                                 <td>3:58</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">5</th>
                                 <td>Destination Unknown</td>
+                                <td>Scandroid</td>
                                 <td>3:38</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">6</th>
                                 <td>Connection</td>
+                                <td>Scandroid</td>
                                 <td>3:57</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">7</th>
                                 <td>Datastream</td>
+                                <td>Scandroid</td>
                                 <td>4:29</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">8</th>
                                 <td>Empty Streets</td>
+                                <td>Scandroid</td>
                                 <td>4:59</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">9</th>
                                 <td>Awakening With You</td>
+                                <td>Scandroid</td>
                                 <td>5:02</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">10</th>
                                 <td>Atom & E.E.V.</td>
+                                <td>Scandroid</td>
                                 <td>5:35</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">11</th>
                                 <td>Neo-Tokyo</td>
+                                <td>Scandroid</td>
                                 <td>6:13</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">12</th>
                                 <td>Pro-Bots & Robophobes (feat. Circle of Dust)</td>
+                                <td>Scandroid</td>
                                 <td>4:02</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">13</th>
                                 <td>Eden</td>
+                                <td>Scandroid</td>
                                 <td>5:40</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">14</th>
                                 <td>Singularity</td>
+                                <td>Scandroid</td>
                                 <td>3:40</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
                             <tr>
                                 <th scope="row">15</th>
                                 <td>Eden (Waveshaper Remix)</td>
+                                <td>Scandroid</td>
                                 <td>4:38</td>
                                 <td><button type="button" class="btn btn-danger" onclick="SomeDeleteRowFunction(this)">Remove</button></td>
                             </tr>
@@ -221,9 +237,9 @@
                     </table>
                     <p class="card-text">Total Length 72:18</p>
 
-                    <p class="card-text">Definitely an album with music of some sort 10/10</p>
-
-
+                    <p id="extra-text" class="card-text">Definitely an album with music of some sort 10/10</p>
+                    <br>
+                    <button id="addTrack" type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModalCenter">Add Track</button>
                 </div>
             </div>
         </div>
@@ -244,6 +260,55 @@
     <footer class="bg-dark fixed-bottom text-light mt-5">
         <p class="ml-2">This might be a footer (c) Me</p>
     </footer>
+
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Add a track</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text" id="basic-addon1">#</span>
+                            </div>
+                            <input id="track-num" type="text" class="form-control" placeholder="Track Number" aria-label="Track #" aria-describedby="basic-addon1">
+                          </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <input id="track-name" type="text" class="form-control" placeholder="Track Name" aria-label="Track name">
+                          </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <input id="track-artist" type="text" class="form-control" placeholder="Artist Name" aria-label="Artist">
+                          </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="input-group mb-3">
+                            <input id="track-length" type="text" class="form-control" placeholder="Duration e.g 3:30" aria-label="duration">
+                          </div>
+                    </div>
+                </div>
+                  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="addTrack(); showAlert();" data-dismiss="modal">Add Track</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
 
 
 
